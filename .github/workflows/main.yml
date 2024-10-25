@@ -4,8 +4,6 @@ on:
   push:
   pull_request:
   workflow_dispatch:
-  release:
-    types: [published]
 
 env:
   PROJECT_TYPE: KEXT
@@ -14,8 +12,6 @@ jobs:
   build:
     name: Build
     runs-on: macos-latest
-    permissions:
-      contents: write
     env:
       JOB_TYPE: BUILD
     steps:
@@ -39,11 +35,3 @@ jobs:
         with:
           name: Artifacts
           path: build/*/*.zip
-      - name: Upload to Release
-        if: github.event_name == 'release'
-        uses: svenstaro/upload-release-action@v2
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: build/*/*.zip
-          tag: ${{ github.ref }}
-          file_glob: true
