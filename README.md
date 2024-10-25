@@ -14,5 +14,6 @@ This is where IntelMKLFixup comes in, IntelMKLFixup will *invisibly* patch bits 
 
 ## Credits & Thanks
 - [vit9696](https://github.com/vit9696) (and contributors) for [RestrictEvents](https://github.com/acidanthera/RestrictEvents), which served as the basis for this project.
+- [Tomnic](https://macos86.it/profile/69-tomnic/) for [the original patching guide](https://macos86.it/topic/5489-tutorial-for-patching-binaries-for-amd-hackintosh-compatibility/), which helped point me in the right direction.
 - [NyaomiDEV](https://github.com/NyaomiDEV) for [AMDFriend](https://github.com/NyaomiDEV/AMDFriend), which served as inspiration for this project.
 - And to anybody who gave me words of encouragement or helped me figure out kernel extension development, thank you.
